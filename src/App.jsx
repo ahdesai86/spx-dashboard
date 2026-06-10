@@ -7,7 +7,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 // ─────────────────────────────────────────────────────────────────────────────
 const SERVER    = typeof window !== "undefined" && window.location.hostname === "localhost"
   ? "http://localhost:3001"
-  : "https://spx-command-production.up.railway.app";
+  : "https://spx-dashboard-production-a6bf.up.railway.app";
 const DEMO_MODE = !SERVER;
 
 // ── Demo data ─────────────────────────────────────────────────────────────────

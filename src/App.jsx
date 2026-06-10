@@ -1,14 +1,12 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CONFIG
 // Local dev:   SERVER = "http://localhost:3001"
 // Production:  SERVER = "https://your-app.up.railway.app"
 // ─────────────────────────────────────────────────────────────────────────────
-const SERVER    = typeof window !== "undefined" && window.location.hostname === "localhost"
-  ? "http://localhost:3001"
-  : "https://spy-command-production.up.railway.app";
-const DEMO_MODE = !SERVER;
+const SERVER = "https://spy-command-production.up.railway.app";
+const DEMO_MODE = false;
 
 // ── Demo data ─────────────────────────────────────────────────────────────────
 const DEMO_GEX = {
